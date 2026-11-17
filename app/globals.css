@@ -40,7 +40,6 @@ body::before {
 /* Headings with Young Serif */
 h1, h2, h3, h4, .font-serif {
   font-family: var(--font-young-serif), serif;
-  color: var(--color-text);
   letter-spacing: -0.01em;
 }
 

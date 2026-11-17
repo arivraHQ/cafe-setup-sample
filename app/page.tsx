@@ -8,6 +8,7 @@ import { Ambience } from "@/components/Ambience";
 import { Happenings } from "@/components/Happenings";
 import { Reviews } from "@/components/Reviews";
 import { Visit } from "@/components/Visit";
+import { Footer } from "@/components/Footer";
 
 export default function HomePage() {
   return (
@@ -21,6 +22,7 @@ export default function HomePage() {
       <Happenings />
       <Reviews />
       <Visit />
+      <Footer />
     </main>
   );
 }
