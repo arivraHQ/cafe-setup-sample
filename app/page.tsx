@@ -2,6 +2,7 @@ import React from "react";
 import { Navbar } from "@/components/Navbar";
 import { Hero } from "@/components/Hero";
 import { Signatures } from "@/components/Signatures";
+import { Menu } from "@/components/Menu";
 
 export default function HomePage() {
   return (
@@ -9,6 +10,7 @@ export default function HomePage() {
       <Navbar />
       <Hero />
       <Signatures />
+      <Menu />
     </main>
   );
 }
