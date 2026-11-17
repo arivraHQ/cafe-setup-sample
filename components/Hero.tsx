@@ -103,21 +103,22 @@ export function Hero() {
                   transform: "rotate(-2.4deg)",
                   transitionTimingFunction: "cubic-bezier(0.34, 1.56, 0.64, 1)",
                 }}
-                className="absolute top-0 left-0 w-[170px] sm:w-[235px] p-2 sm:p-2.5 pb-4 sm:pb-6 bg-surface rounded-cafe border border-espresso/15 polaroid-shadow transition-transform duration-500 ease-spring-soft hover:!rotate-0 hover:z-30 cursor-pointer group"
+                className="absolute top-0 left-0 w-[170px] sm:w-[235px] p-2 sm:p-2.5 pb-4 sm:pb-6 bg-surface rounded-cafe border border-espresso/15 polaroid-shadow transition-transform duration-500 ease-spring-soft hover:!rotate-0 hover:z-30 cursor-pointer select-none group"
               >
                 {/* Washi tape graphic */}
-                <div className="absolute -top-2.5 left-6 w-11 sm:w-14 h-3.5 sm:h-4 bg-marigold/30 border border-marigold/40 rounded-sm transform -rotate-3" />
-                <div className="relative w-full h-[125px] sm:h-[180px] overflow-hidden rounded-[10px] bg-paper">
+                <div className="absolute -top-2.5 left-6 w-11 sm:w-14 h-3.5 sm:h-4 bg-marigold/30 border border-marigold/40 rounded-sm transform -rotate-3 pointer-events-none" />
+                <div className="relative w-full h-[125px] sm:h-[180px] overflow-hidden rounded-[10px] bg-paper select-none pointer-events-none">
                   <Image
                     src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=800&q=80"
                     alt={siteConfig.heroCollage[0].title}
                     fill
                     sizes="(max-width: 640px) 170px, 235px"
-                    className="object-cover group-hover:scale-105 transition-transform duration-500"
+                    className="object-cover group-hover:scale-105 transition-transform duration-500 select-none pointer-events-none"
                     priority
+                    draggable={false}
                   />
                 </div>
-                <div className="mt-2 px-1 flex items-center justify-between">
+                <div className="mt-2 px-1 flex items-center justify-between pointer-events-none select-none">
                   <span className="font-serif text-[10px] sm:text-xs text-espresso font-semibold">
                     Slow Pour-over
                   </span>
@@ -132,10 +133,10 @@ export function Hero() {
                   transform: "rotate(2.2deg)",
                   transitionTimingFunction: "cubic-bezier(0.34, 1.56, 0.64, 1)",
                 }}
-                className="absolute top-0 right-0 w-[175px] sm:w-[240px] p-2 sm:p-2.5 pb-4 sm:pb-6 bg-surface rounded-cafe border border-espresso/15 polaroid-shadow transition-transform duration-500 ease-spring-soft hover:!rotate-0 hover:z-30 cursor-pointer group z-10"
+                className="absolute top-0 right-0 w-[175px] sm:w-[240px] p-2 sm:p-2.5 pb-4 sm:pb-6 bg-surface rounded-cafe border border-espresso/15 polaroid-shadow transition-transform duration-500 ease-spring-soft hover:!rotate-0 hover:z-30 cursor-pointer select-none group z-10"
               >
                 {/* Top caption for unobstructed readability */}
-                <div className="mb-1.5 px-1 flex items-center justify-between">
+                <div className="mb-1.5 px-1 flex items-center justify-between pointer-events-none select-none">
                   <span className="font-serif text-[10px] sm:text-xs text-espresso font-semibold">
                     Sunlit Nook
                   </span>
@@ -144,52 +145,56 @@ export function Hero() {
                   </span>
                 </div>
                 {/* Washi tape graphic */}
-                <div className="absolute -top-2.5 right-6 w-11 sm:w-14 h-3.5 sm:h-4 bg-sage/30 border border-sage/40 rounded-sm transform rotate-4" />
-                <div className="relative w-full h-[125px] sm:h-[180px] overflow-hidden rounded-[10px] bg-paper">
+                <div className="absolute -top-2.5 right-6 w-11 sm:w-14 h-3.5 sm:h-4 bg-sage/30 border border-sage/40 rounded-sm transform rotate-4 pointer-events-none" />
+                <div className="relative w-full h-[125px] sm:h-[180px] overflow-hidden rounded-[10px] bg-paper select-none pointer-events-none">
                   <Image
                     src={siteConfig.heroCollage[1].imageUrl}
                     alt={siteConfig.heroCollage[1].title}
                     fill
                     sizes="(max-width: 640px) 175px, 240px"
-                    className="object-cover group-hover:scale-105 transition-transform duration-500"
+                    className="object-cover group-hover:scale-105 transition-transform duration-500 select-none pointer-events-none"
                     priority
+                    draggable={false}
                   />
                 </div>
               </div>
 
               {/* Polaroid 3 (Foreground Center-Bottom: Clay Kulhad Chai) */}
               {/* IMAGE BRIEF: Clay earthen kulhad filled with steaming masala chai, scattered crushed green cardamom and cinnamon bark on raw wooden counter */}
-              <div
-                style={{
-                  transform: "rotate(-0.8deg)",
-                  transitionTimingFunction: "cubic-bezier(0.34, 1.56, 0.64, 1)",
-                }}
-                className="absolute bottom-1 left-1/2 -translate-x-1/2 w-[195px] sm:w-[260px] p-2 sm:p-3 pb-4 sm:pb-8 bg-[#FFFBF3] rounded-cafe border border-espresso/20 polaroid-shadow transition-transform duration-500 ease-spring-soft hover:!rotate-0 hover:z-30 cursor-pointer group z-20"
-              >
-                {/* Washi tape graphic */}
-                <div className="absolute -top-2.5 left-8 w-12 sm:w-16 h-3.5 sm:h-4 bg-coffee/20 border border-coffee/30 rounded-sm transform -rotate-1" />
-                <div className="relative w-full h-[145px] sm:h-[200px] overflow-hidden rounded-[10px] bg-paper">
-                  <Image
-                    src={siteConfig.heroCollage[2].imageUrl}
-                    alt={siteConfig.heroCollage[2].title}
-                    fill
-                    sizes="(max-width: 640px) 195px, 260px"
-                    className="object-cover group-hover:scale-105 transition-transform duration-500"
-                    priority
-                  />
-                </div>
-                <div className="mt-2 px-1 flex items-center justify-between">
-                  <div>
-                    <span className="font-serif text-[11px] sm:text-sm text-espresso font-bold block">
-                      Mitti Kulhad Chai
-                    </span>
-                    <span className="font-hand text-[10px] sm:text-xs text-coffee/75 block">
-                      Slow simmered in clay
+              <div className="absolute bottom-1 left-1/2 -translate-x-1/2 z-20 pointer-events-auto">
+                <div
+                  style={{
+                    transform: "rotate(-0.8deg)",
+                    transitionTimingFunction: "cubic-bezier(0.34, 1.56, 0.64, 1)",
+                  }}
+                  className="w-[195px] sm:w-[260px] p-2 sm:p-3 pb-4 sm:pb-8 bg-[#FFFBF3] rounded-cafe border border-espresso/20 polaroid-shadow transition-transform duration-500 ease-spring-soft hover:!rotate-0 hover:z-30 cursor-pointer select-none group"
+                >
+                  {/* Washi tape graphic */}
+                  <div className="absolute -top-2.5 left-8 w-12 sm:w-16 h-3.5 sm:h-4 bg-coffee/20 border border-coffee/30 rounded-sm transform -rotate-1 pointer-events-none" />
+                  <div className="relative w-full h-[145px] sm:h-[200px] overflow-hidden rounded-[10px] bg-paper select-none pointer-events-none">
+                    <Image
+                      src={siteConfig.heroCollage[2].imageUrl}
+                      alt={siteConfig.heroCollage[2].title}
+                      fill
+                      sizes="(max-width: 640px) 195px, 260px"
+                      className="object-cover group-hover:scale-105 transition-transform duration-500 select-none pointer-events-none"
+                      priority
+                      draggable={false}
+                    />
+                  </div>
+                  <div className="mt-2 px-1 flex items-center justify-between pointer-events-none select-none">
+                    <div>
+                      <span className="font-serif text-[11px] sm:text-sm text-espresso font-bold block">
+                        Mitti Kulhad Chai
+                      </span>
+                      <span className="font-hand text-[10px] sm:text-xs text-coffee/75 block">
+                        Slow simmered in clay
+                      </span>
+                    </div>
+                    <span className="font-hand text-xs sm:text-sm text-marigold font-bold bg-marigold/10 px-1.5 sm:px-2 py-0.5 rounded-full border border-marigold/20">
+                      ₹120
                     </span>
                   </div>
-                  <span className="font-hand text-xs sm:text-sm text-marigold font-bold bg-marigold/10 px-1.5 sm:px-2 py-0.5 rounded-full border border-marigold/20">
-                    ₹120
-                  </span>
                 </div>
               </div>
             </div>

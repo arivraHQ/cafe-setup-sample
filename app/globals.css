@@ -24,6 +24,12 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
+/* Prevent ghost image dragging across the site */
+img {
+  -webkit-user-drag: none;
+  user-select: none;
+}
+
 /* Subtle 5% paper texture overlay using SVG noise */
 body::before {
   content: "";
