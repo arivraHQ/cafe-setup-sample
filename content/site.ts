@@ -393,7 +393,7 @@ export const siteConfig = {
       "Mitti started in the winter of 2021 with six tables, an antique manual lever espresso machine, and a sack of clay kulhads sourced from potters in Bithoor. We missed the quiet, unhurried cadence of Kanpur's older courtyard homes—where mornings stretched over endless chai and heated debates about literature, cricket, and city gossip.",
     secondaryParagraph:
       "Every corner here is built by hand: the exposed lime-washed brick, the reclaimed teak benches from old colonial bungalows in Civil Lines, and the handwritten library cards inside our shared bookshelf. Whether you come to write your thesis, bring your grandmother for ginger chai, or sing an unpolished ballad on Friday night—this space belongs to you as much as it does to us.",
-    portraitUrl: "https://images.unsplash.com/photo-1577219491135-ce391730fb2c?auto=format&fit=crop&w=700&q=80",
+    portraitUrl: "https://images.unsplash.com/photo-1583394293214-28ded15ee548?auto=format&fit=crop&w=800&q=80",
     portraitBrief: "Warm candid portrait of co-founder in linen apron holding an earthenware bowl, natural window light, rustic wooden kitchen background",
   },
   ambiencePhotos: [

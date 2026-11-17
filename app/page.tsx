@@ -3,6 +3,7 @@ import { Navbar } from "@/components/Navbar";
 import { Hero } from "@/components/Hero";
 import { Signatures } from "@/components/Signatures";
 import { Menu } from "@/components/Menu";
+import { Story } from "@/components/Story";
 
 export default function HomePage() {
   return (
@@ -11,6 +12,7 @@ export default function HomePage() {
       <Hero />
       <Signatures />
       <Menu />
+      <Story />
     </main>
   );
 }

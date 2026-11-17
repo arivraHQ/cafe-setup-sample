@@ -2,6 +2,25 @@ import { chromium } from "playwright";
 import fs from "fs";
 import path from "path";
 
+async function scrollPageToTriggerLazyLoad(page) {
+  await page.evaluate(async () => {
+    await new Promise((resolve) => {
+      let totalHeight = 0;
+      const distance = 400;
+      const timer = setInterval(() => {
+        const scrollHeight = document.body.scrollHeight;
+        window.scrollBy(0, distance);
+        totalHeight += distance;
+        if (totalHeight >= scrollHeight) {
+          clearInterval(timer);
+          window.scrollTo(0, 0);
+          resolve();
+        }
+      }, 100);
+    });
+  });
+}
+
 async function main() {
   const url = process.argv[2] || "http://localhost:3000";
   const prefix = process.argv[3] || "audit";
@@ -12,13 +31,14 @@ async function main() {
 
   const browser = await chromium.launch({ headless: true });
 
-  // Desktop (1440px viewport + fullPage)
+  // Desktop (1440px)
   const pageDesktop = await browser.newPage({
     viewport: { width: 1440, height: 900 },
     deviceScaleFactor: 2,
   });
   await pageDesktop.goto(url, { waitUntil: "networkidle" });
-  await pageDesktop.waitForTimeout(1000);
+  await scrollPageToTriggerLazyLoad(pageDesktop);
+  await pageDesktop.waitForTimeout(1200);
   await pageDesktop.screenshot({
     path: path.join(outDir, `${prefix}-1440px.png`),
     fullPage: false,
@@ -28,14 +48,15 @@ async function main() {
     fullPage: true,
   });
 
-  // Mobile (375px viewport + fullPage)
+  // Mobile (375px)
   const pageMobile = await browser.newPage({
     viewport: { width: 375, height: 812 },
     deviceScaleFactor: 2,
     isMobile: true,
   });
   await pageMobile.goto(url, { waitUntil: "networkidle" });
-  await pageMobile.waitForTimeout(1000);
+  await scrollPageToTriggerLazyLoad(pageMobile);
+  await pageMobile.waitForTimeout(1200);
   await pageMobile.screenshot({
     path: path.join(outDir, `${prefix}-375px.png`),
     fullPage: false,
