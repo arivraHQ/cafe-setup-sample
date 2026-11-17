@@ -5,6 +5,7 @@ import { Signatures } from "@/components/Signatures";
 import { Menu } from "@/components/Menu";
 import { Story } from "@/components/Story";
 import { Ambience } from "@/components/Ambience";
+import { Happenings } from "@/components/Happenings";
 
 export default function HomePage() {
   return (
@@ -15,6 +16,7 @@ export default function HomePage() {
       <Menu />
       <Story />
       <Ambience />
+      <Happenings />
     </main>
   );
 }
