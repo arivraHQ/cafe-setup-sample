@@ -6,6 +6,7 @@ import { Menu } from "@/components/Menu";
 import { Story } from "@/components/Story";
 import { Ambience } from "@/components/Ambience";
 import { Happenings } from "@/components/Happenings";
+import { Reviews } from "@/components/Reviews";
 
 export default function HomePage() {
   return (
@@ -17,6 +18,7 @@ export default function HomePage() {
       <Story />
       <Ambience />
       <Happenings />
+      <Reviews />
     </main>
   );
 }
