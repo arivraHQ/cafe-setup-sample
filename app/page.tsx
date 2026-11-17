@@ -7,6 +7,7 @@ import { Story } from "@/components/Story";
 import { Ambience } from "@/components/Ambience";
 import { Happenings } from "@/components/Happenings";
 import { Reviews } from "@/components/Reviews";
+import { Visit } from "@/components/Visit";
 
 export default function HomePage() {
   return (
@@ -19,6 +20,7 @@ export default function HomePage() {
       <Ambience />
       <Happenings />
       <Reviews />
+      <Visit />
     </main>
   );
 }
