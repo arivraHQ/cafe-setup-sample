@@ -4,6 +4,7 @@ import { Hero } from "@/components/Hero";
 import { Signatures } from "@/components/Signatures";
 import { Menu } from "@/components/Menu";
 import { Story } from "@/components/Story";
+import { Ambience } from "@/components/Ambience";
 
 export default function HomePage() {
   return (
@@ -13,6 +14,7 @@ export default function HomePage() {
       <Signatures />
       <Menu />
       <Story />
+      <Ambience />
     </main>
   );
 }
