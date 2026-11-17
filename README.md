@@ -3,8 +3,8 @@
 > **A boutique design studio showcase for a cosy neighbourhood cafe in Swaroop Nagar & Civil Lines, Kanpur.**  
 > Crafted with an earthy, tactile aesthetic that feels like a well-loved physical menu card, completely avoiding generic AI templates or corporate tech startup tropes.
 
-🌐 **Live Production URL**: [https://mitti-demo.arivra.com](https://mitti-demo.arivra.com)  
-⚡ **Vercel Mirror**: [https://mitti-cafe-demo.vercel.app](https://mitti-cafe-demo.vercel.app)  
+🌐 **Live Production URL**: [https://miti-demo.arivra.com](https://miti-demo.arivra.com)  
+⚡ **Vercel Mirror**: [https://miti-cafe-demo.vercel.app](https://miti-cafe-demo.vercel.app)  
 
 ---
 
@@ -148,7 +148,7 @@ npm install
 npm run dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) for local development, or view the live deployment at [https://mitti-demo.arivra.com](https://mitti-demo.arivra.com).
+Open [http://localhost:3000](http://localhost:3000) for local development, or view the live deployment at [https://miti-demo.arivra.com](https://miti-demo.arivra.com).
 
 ### Production Build
 ```bash
@@ -163,8 +163,8 @@ npm run start
 
 ## 🌐 Live Deployments
 
-- **Custom Domain (Cloudflare DNS)**: [https://mitti-demo.arivra.com](https://mitti-demo.arivra.com)
-- **Vercel Production Mirror**: [https://mitti-cafe-demo.vercel.app](https://mitti-cafe-demo.vercel.app)
+- **Custom Domain (Cloudflare DNS)**: [https://miti-demo.arivra.com](https://miti-demo.arivra.com)
+- **Vercel Production Mirror**: [https://miti-cafe-demo.vercel.app](https://miti-cafe-demo.vercel.app)
 
 ---
 
