@@ -4,7 +4,7 @@ import path from "path";
 
 async function main() {
   const url = process.argv[2] || "http://localhost:3000";
-  const prefix = process.argv[3] || "navbar-hero";
+  const prefix = process.argv[3] || "audit";
   const outDir = path.resolve("./screenshots");
   if (!fs.existsSync(outDir)) {
     fs.mkdirSync(outDir, { recursive: true });
@@ -12,7 +12,7 @@ async function main() {
 
   const browser = await chromium.launch({ headless: true });
 
-  // Desktop (1440px viewport)
+  // Desktop (1440px viewport + fullPage)
   const pageDesktop = await browser.newPage({
     viewport: { width: 1440, height: 900 },
     deviceScaleFactor: 2,
@@ -23,8 +23,12 @@ async function main() {
     path: path.join(outDir, `${prefix}-1440px.png`),
     fullPage: false,
   });
+  await pageDesktop.screenshot({
+    path: path.join(outDir, `${prefix}-1440px-full.png`),
+    fullPage: true,
+  });
 
-  // Mobile (375px viewport)
+  // Mobile (375px viewport + fullPage)
   const pageMobile = await browser.newPage({
     viewport: { width: 375, height: 812 },
     deviceScaleFactor: 2,
@@ -36,8 +40,6 @@ async function main() {
     path: path.join(outDir, `${prefix}-375px.png`),
     fullPage: false,
   });
-
-  // Mobile full page to verify the complete mobile hero
   await pageMobile.screenshot({
     path: path.join(outDir, `${prefix}-375px-full.png`),
     fullPage: true,
