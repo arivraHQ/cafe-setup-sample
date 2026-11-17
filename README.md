@@ -3,6 +3,9 @@
 > **A boutique design studio showcase for a cosy neighbourhood cafe in Swaroop Nagar & Civil Lines, Kanpur.**  
 > Crafted with an earthy, tactile aesthetic that feels like a well-loved physical menu card, completely avoiding generic AI templates or corporate tech startup tropes.
 
+🌐 **Live Production URL**: [https://mitti-demo.arivra.com](https://mitti-demo.arivra.com)  
+⚡ **Vercel Mirror**: [https://mitti-cafe-demo.vercel.app](https://mitti-cafe-demo.vercel.app)  
+
 ---
 
 ## ☕ Client & Brand Essence
@@ -135,7 +138,7 @@ This project strictly adheres to agency-level design governance to prevent typic
 ### Installation
 ```bash
 # Clone the repository
-git clone <repository-url>
+git clone https://github.com/arivraHQ/cafe-setup-sample.git
 cd cafe-setup-sample
 
 # Install dependencies
@@ -145,7 +148,7 @@ npm install
 npm run dev
 ```
 
-Visit [http://localhost:3000](http://localhost:3000) in your browser.
+Open [http://localhost:3000](http://localhost:3000) for local development, or view the live deployment at [https://mitti-demo.arivra.com](https://mitti-demo.arivra.com).
 
 ### Production Build
 ```bash
@@ -155,6 +158,13 @@ npm run build
 # Start production server
 npm run start
 ```
+
+---
+
+## 🌐 Live Deployments
+
+- **Custom Domain (Cloudflare DNS)**: [https://mitti-demo.arivra.com](https://mitti-demo.arivra.com)
+- **Vercel Production Mirror**: [https://mitti-cafe-demo.vercel.app](https://mitti-cafe-demo.vercel.app)
 
 ---
 
