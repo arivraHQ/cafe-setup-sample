@@ -1,5 +1,3 @@
-"use client";
-
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
@@ -154,6 +152,7 @@ export function Hero() {
                     fill
                     sizes="(max-width: 640px) 175px, 240px"
                     className="object-cover group-hover:scale-105 transition-transform duration-500"
+                    priority
                   />
                 </div>
               </div>

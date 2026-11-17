@@ -1,5 +1,3 @@
-"use client";
-
 import React from "react";
 import { siteConfig, Happening } from "@/content/site";
 import { StarSparkle, HandArrowDoodle } from "./Doodles";
@@ -83,7 +81,7 @@ export function Happenings() {
 
                 {/* Right Section: Tear-off Stub (Ticket No & RSVP) */}
                 <div className="p-6 sm:p-8 md:w-56 flex-shrink-0 bg-surface/40 flex flex-col items-center justify-center text-center">
-                  <span className="font-mono text-xs tracking-widest text-espresso/60 uppercase">
+                  <span className="font-mono text-xs tracking-widest text-espresso/80 font-medium uppercase">
                     ADMIT ONE
                   </span>
                   <span className="font-serif text-sm font-bold text-coffee mt-1 tracking-wider">

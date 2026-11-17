@@ -1,5 +1,3 @@
-"use client";
-
 import React from "react";
 import { siteConfig } from "@/content/site";
 import { LeafDoodle, HandArrowDoodle } from "./Doodles";
